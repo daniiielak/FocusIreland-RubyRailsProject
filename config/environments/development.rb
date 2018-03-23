@@ -3,6 +3,7 @@ Rails.application.configure do
   class Application < Rails::Application
   config.web_console.whitelisted_ips = '37.228.246.54'
   config.web_console.whitelisted_ips = '192.168.60.11'
+  config.web_console.whitelisted_ips = '78.152.254.48'
   end
   
   # Settings specified here will take precedence over those in config/application.rb.
@@ -57,5 +58,5 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-  
+  config.action_mailer.default_url_options = { host: ENV['IP'], port:ENV['PORT'] }
 end

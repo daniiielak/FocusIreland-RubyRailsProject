@@ -14,13 +14,23 @@
         <div id="navbar">
           <ul>
             <li><a href="/products">Products</a></li>
+            <li><a href="/admin">Login</a></li>
+            <li><a href="/logout">Logout</a></li>
           </ul>
         </div>
       </div>
       <div id='contianer'>
         <div id='content'>
           <p class="notice"><%= flash[:notice] %></p>
+          <p class="notice"><%= flash[:notice] %></p>
+          <p class="alert"><%= flash[:alert] %></p>
             <%= yield %>
+            
+            <% if user_signed_in? %>
+              <div> Signed <%= current_user.email %> (<%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>)
+            <% else %>
+              <%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %>
+            <% end %>
       </div>
       <!--
       <div id='first-column'>
