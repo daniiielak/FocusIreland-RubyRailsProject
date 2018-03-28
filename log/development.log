@@ -3248,3 +3248,1269 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 32ms (Views: 29.5ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 62.47.47.100 at 2018-03-28 09:42:07 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 62.47.47.100 at 2018-03-28 09:42:07 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 271ms (Views: 255.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 62.47.47.100 at 2018-03-28 09:42:11 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 62.47.47.100 at 2018-03-28 09:42:11 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 62.47.47.100 at 2018-03-28 09:42:13 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 62.47.47.100 at 2018-03-28 09:42:14 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 62.47.47.100 at 2018-03-28 09:42:57 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mtjO/eweaIu578HNokVZphl7vOKobeMS1hh+M/xGNvF4ZV4jJ+iu504jeVad8p863zNqZMfh6sNuwlmoaGPuBw==", "user"=>{"email"=>"Admin@email.ie", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (13.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "admin@email.ie"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-28 09:42:57.414929"], ["current_sign_in_ip", "62.47.47.100"], ["sign_in_count", 2], ["updated_at", "2018-03-28 09:42:57.416491"], ["id", 2]]
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://79a9d8a77c1f46ec9d06a36b950a2307.vfs.cloud9.us-east-2.amazonaws.com/signedinuserprofile
+Completed 302 Found in 187ms (ActiveRecord: 20.1ms)
+
+
+Started GET "/signedinuserprofile" for 62.47.47.100 at 2018-03-28 09:42:57 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProfilesController#signedinuserprofile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Profile Load (0.0ms)[0m  [1m[34mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+Redirected to https://79a9d8a77c1f46ec9d06a36b950a2307.vfs.cloud9.us-east-2.amazonaws.com/profiles/2
+Completed 302 Found in 15ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/profiles/2" for 62.47.47.100 at 2018-03-28 09:42:57 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfile Load (0.2ms)[0m  [1m[34mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (14.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 09:43:03 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 40ms (Views: 31.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/products/new" for 62.47.47.100 at 2018-03-28 09:43:52 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (4.1ms)
+  Rendered products/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products" for 62.47.47.100 at 2018-03-28 09:45:19 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Oc2mAASlTrZrdr5Zfpvfg2ACBVI8mSRJgEu3AQSLcILclzHLiZli/T9+YokxGZNcCztjgURtHT8JkduDoeVLw==", "product"=>{"product"=>"MEC DELPHINUS -9C SLEEPING BAG - WOMEN'S", "description"=>"The Delphinus sleeping-bag uses down and tightly woven Pertex nylon that sheds moisture and prevents the down from working its way out. The down structure ensures that sleepers won't develop a cold spot over their core as they shift around during the night. Tested with EN standard, the most dependable standard available for temperature ratings for up to -9 degrees.", "image_url"=>"sleeping-bag-f.jpg", "price"=>"99", "category"=>"Women"}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "products" ("product", "description", "image_url", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product", "MEC DELPHINUS -9C SLEEPING BAG - WOMEN'S"], ["description", "The Delphinus sleeping-bag uses down and tightly woven Pertex nylon that sheds moisture and prevents the down from working its way out. The down structure ensures that sleepers won't develop a cold spot over their core as they shift around during the night. Tested with EN standard, the most dependable standard available for temperature ratings for up to -9 degrees."], ["image_url", "sleeping-bag-f.jpg"], ["price", 99.0], ["category", "Women"], ["created_at", "2018-03-28 09:45:19.016613"], ["updated_at", "2018-03-28 09:45:19.016613"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://79a9d8a77c1f46ec9d06a36b950a2307.vfs.cloud9.us-east-2.amazonaws.com/products/3
+Completed 302 Found in 12ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/products/3" for 62.47.47.100 at 2018-03-28 09:45:19 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 23.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 09:45:23 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 25.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/products/1" for 62.47.47.100 at 2018-03-28 09:45:29 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XU8wHjMdLz7e4DgVU+mzF5Dsceh5Tj2EIqubLkYHFRzAAhu4DVlEmoxVgLIXhrXy/JbrEG6z9UkguXIxYCmyEg==", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 1]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://79a9d8a77c1f46ec9d06a36b950a2307.vfs.cloud9.us-east-2.amazonaws.com/products
+Completed 302 Found in 11ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 09:45:30 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for 62.47.47.100 at 2018-03-28 09:45:47 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (2.8ms)
+  Rendered products/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/products" for 62.47.47.100 at 2018-03-28 09:46:28 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oDftkAlIoXKv6hUxvCtl3BRE4YgEcC1ZlNeOk97Q91tLoofPJ3xRw4K6NkL9FWzvaegEE0mT/bxO8Och1EVPtg==", "product"=>{"product"=>"MEC DELPHINUS -9C SLEEPING BAG - MEN'S", "description"=>"The Delphinus sleeping-bag uses down and tightly woven Pertex nylon that sheds moisture and prevents the down from working its way out. The down structure ensures that sleepers won't develop a cold spot over their core as they shift around during the night. Tested with EN standard, the most dependable standard available for temperature ratings for up to -9 degrees.", "image_url"=>"sleeping-bag-m.jpg", "price"=>"99", "category"=>"Men"}, "commit"=>"Create Product"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "products" ("product", "description", "image_url", "price", "category", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["product", "MEC DELPHINUS -9C SLEEPING BAG - MEN'S"], ["description", "The Delphinus sleeping-bag uses down and tightly woven Pertex nylon that sheds moisture and prevents the down from working its way out. The down structure ensures that sleepers won't develop a cold spot over their core as they shift around during the night. Tested with EN standard, the most dependable standard available for temperature ratings for up to -9 degrees."], ["image_url", "sleeping-bag-m.jpg"], ["price", 99.0], ["category", "Men"], ["created_at", "2018-03-28 09:46:28.844907"], ["updated_at", "2018-03-28 09:46:28.844907"]]
+  [1m[35m (4.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://79a9d8a77c1f46ec9d06a36b950a2307.vfs.cloud9.us-east-2.amazonaws.com/products/4
+Completed 302 Found in 12ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/products/4" for 62.47.47.100 at 2018-03-28 09:46:29 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 09:46:31 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/products/2" for 62.47.47.100 at 2018-03-28 09:46:35 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pEwYNtCQ/gr1rTJU7UQF9MhKIaNsl/dc7bRDTxOWmto5ATOQ7tSVrqcYivOpKwMRpDC7W3tqP5HvpqpQNbg91A==", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 2]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://79a9d8a77c1f46ec9d06a36b950a2307.vfs.cloud9.us-east-2.amazonaws.com/products
+Completed 302 Found in 17ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 09:46:35 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/logout" for 62.47.47.100 at 2018-03-28 09:47:08 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'logout' could not be found for UserController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/admin" for 62.47.47.100 at 2018-03-28 09:47:12 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'admin_login' could not be found for UserController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 09:47:15 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 24.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 09:47:17 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 27ms (Views: 24.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 62.47.47.100 at 2018-03-28 09:47:19 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rYDswVls7XmeQEpkkxut3doz8SgkIUMM6Cc6S0bstNQwzcdnZyiG3cz18sPXdKs4tklr0DPci8HqNdNUYMIT2g=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://79a9d8a77c1f46ec9d06a36b950a2307.vfs.cloud9.us-east-2.amazonaws.com/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 62.47.47.100 at 2018-03-28 09:47:20 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 62.47.47.100 at 2018-03-28 09:47:20 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.1/gems/devise-4.4.3/app/views/devise/sessions/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 62.47.47.100 at 2018-03-28 09:47:31 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lzCanFwgZzcteK26lAvqXBTed2M4yd8zaa5xut+qUzNdlFfzPbfZCGr9+b/7pXO/vkK5RML57+cvt9yu6iDHDQ==", "user"=>{"email"=>"Admin@email.ie", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "admin@email.ie"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2018-03-28 09:47:31.790766"], ["last_sign_in_at", "2018-03-28 09:42:57.414929"], ["last_sign_in_ip", "62.47.47.100"], ["sign_in_count", 3], ["updated_at", "2018-03-28 09:47:31.792102"], ["id", 2]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://79a9d8a77c1f46ec9d06a36b950a2307.vfs.cloud9.us-east-2.amazonaws.com/signedinuserprofile
+Completed 302 Found in 165ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/signedinuserprofile" for 62.47.47.100 at 2018-03-28 09:47:31 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProfilesController#signedinuserprofile as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Profile Load (0.0ms)[0m  [1m[34mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."user_id" = ? LIMIT ?[0m  [["user_id", 2], ["LIMIT", 1]]
+Redirected to https://79a9d8a77c1f46ec9d06a36b950a2307.vfs.cloud9.us-east-2.amazonaws.com/profiles/2
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/profiles/2" for 62.47.47.100 at 2018-03-28 09:47:32 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 09:47:38 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 62.47.47.100 at 2018-03-28 09:50:42 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'admin_login' could not be found for UserController):
+  
+actionpack (5.1.5) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.5) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.5) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.5) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 09:50:47 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 09:50:48 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 67ms (Views: 64.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:03:09 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (183.2ms)
+Completed 500 Internal Server Error in 187ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `products' for #<#<Class:0x007f6b992150c8>:0x007f6b99caa8f8>
+Did you mean?  product
+               @products):
+    12:       </td>
+    13:   <td>
+    14:           <div class='title'>
+    15:             <%= link_to products.title, item%>
+    16:           </div>
+    17:           <div class='description'>
+    18:             <%= product.description %>
+  
+app/views/products/index.html.erb:15:in `block in _app_views_products_index_html_erb__4195764355605665783_70050059213200'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb__4195764355605665783_70050059213200'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:03:27 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (236.7ms)
+Completed 500 Internal Server Error in 242ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `products' for #<#<Class:0x007f6b992150c8>:0x000000041647a8>
+Did you mean?  product
+               @products):
+    12:       </td>
+    13:   <td>
+    14:           <div class='title'>
+    15:             <%= link_to products.title, product%>
+    16:           </div>
+    17:           <div class='description'>
+    18:             <%= product.description %>
+  
+app/views/products/index.html.erb:15:in `block in _app_views_products_index_html_erb__4195764355605665783_34354620'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb__4195764355605665783_34354620'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:03:36 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (186.9ms)
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `products' for #<#<Class:0x007f6b992150c8>:0x007f6b94113f30>
+Did you mean?  product
+               @products):
+    12:       </td>
+    13:   <td>
+    14:           <div class='title'>
+    15:             <%= link_to products.title, products%>
+    16:           </div>
+    17:           <div class='description'>
+    18:             <%= product.description %>
+  
+app/views/products/index.html.erb:15:in `block in _app_views_products_index_html_erb__4195764355605665783_70050111383020'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb__4195764355605665783_70050111383020'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:03:44 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Product:0x007f6b99a76a00>):
+    12:       </td>
+    13:   <td>
+    14:           <div class='title'>
+    15:             <%= link_to product.title, products%>
+    16:           </div>
+    17:           <div class='description'>
+    18:             <%= product.description %>
+  
+app/views/products/index.html.erb:15:in `block in _app_views_products_index_html_erb__4195764355605665783_70050058131960'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb__4195764355605665783_70050058131960'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:03:54 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Product:0x007f6b9986b580>):
+    12:       </td>
+    13:   <td>
+    14:           <div class='title'>
+    15:             <%= link_to product.title, product%>
+    16:           </div>
+    17:           <div class='description'>
+    18:             <%= product.description %>
+  
+app/views/products/index.html.erb:15:in `block in _app_views_products_index_html_erb__4195764355605665783_70050057486760'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb__4195764355605665783_70050057486760'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:05:33 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (174.5ms)
+Completed 500 Internal Server Error in 178ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `products' for #<#<Class:0x007f6b992150c8>:0x007f6b9976a0c8>
+Did you mean?  product
+               @products):
+    12:       </td>
+    13:   <td>
+    14:           <div class='title'>
+    15:             <%= link_to products.product, products%>
+    16:           </div>
+    17:           <div class='description'>
+    18:             <%= products.description %>
+  
+app/views/products/index.html.erb:15:in `block in _app_views_products_index_html_erb__4195764355605665783_70050056459640'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb__4195764355605665783_70050056459640'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:05:56 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (167.4ms)
+Completed 500 Internal Server Error in 171ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `products' for #<#<Class:0x007f6b992150c8>:0x007f6b997a5498>
+Did you mean?  product
+               @products):
+    12:       </td>
+    13:   <td>
+    14:           <div class='title'>
+    15:             <%= link_to products.product, product%>
+    16:           </div>
+    17:           <div class='description'>
+    18:             <%= products.description %>
+  
+app/views/products/index.html.erb:15:in `block in _app_views_products_index_html_erb__4195764355605665783_70050056580920'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb__4195764355605665783_70050056580920'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:06:34 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `products' for #<Product:0x007f6b99a09ce8>
+Did you mean?  product
+               product?
+               product=):
+    12:       </td>
+    13:   <td>
+    14:           <div class='title'>
+    15:             <%= link_to product.products, product%>
+    16:           </div>
+    17:           <div class='description'>
+    18:             <%= products.description %>
+  
+app/views/products/index.html.erb:15:in `block in _app_views_products_index_html_erb__4195764355605665783_70050057947880'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb__4195764355605665783_70050057947880'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:06:47 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (175.9ms)
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `products' for #<#<Class:0x007f6b992150c8>:0x007f6b99821980>
+Did you mean?  product
+               @products):
+    15:             <%= link_to product.product, product%>
+    16:           </div>
+    17:           <div class='description'>
+    18:             <%= products.description %>
+    19:           </div>
+    20:           <div class='price'>
+    21:             <%= number_to_currency(item.price, :unit => '€') %>
+  
+app/views/products/index.html.erb:18:in `block in _app_views_products_index_html_erb__4195764355605665783_70050056835500'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb__4195764355605665783_70050056835500'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:07:04 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (172.7ms)
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `item' for #<#<Class:0x007f6b992150c8>:0x007f6b997c7778>):
+    18:             <%= product.description %>
+    19:           </div>
+    20:           <div class='price'>
+    21:             <%= number_to_currency(item.price, :unit => '€') %>
+    22:           </div>
+    23:           
+    24:           
+  
+app/views/products/index.html.erb:21:in `block in _app_views_products_index_html_erb__4195764355605665783_70050056677520'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb__4195764355605665783_70050056677520'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:07:19 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 35ms (Views: 32.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:12:30 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:18:16 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/Site/Bodenstown.jpg"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:63:in `block (3 levels) in broadcast'
+activesupport (5.1.5) lib/active_support/logger_silence.rb:20:in `silence'
+activesupport (5.1.5) lib/active_support/logger.rb:61:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/profiles/2" for 62.47.47.100 at 2018-03-28 10:18:19 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfile Load (0.1ms)[0m  [1m[34mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering profiles/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered profiles/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:18:34 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:26:35 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:27:06 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 62.47.47.100 at 2018-03-28 10:28:54 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 62.47.47.100 at 2018-03-28 10:41:35 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+NameError (undefined local variable or method `‘' for #<ActionDispatch::Routing::Mapper:0x007f6b98dbad70>):
+  
+config/routes.rb:5:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 62.47.47.100 at 2018-03-28 10:42:55 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+NameError (undefined local variable or method `‘' for #<ActionDispatch::Routing::Mapper:0x007f6b99696188>):
+  
+config/routes.rb:5:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/about" for 62.47.47.100 at 2018-03-28 10:42:59 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:43:17 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/products"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/product" for 62.47.47.100 at 2018-03-28 10:43:24 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/product"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/sign_in" for 62.47.47.100 at 2018-03-28 10:43:36 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:45:26 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/home/ec2-user/environment/focus-ireland/config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get 'site/about’ => 'site#about'
+                             ^
+/home/ec2-user/environment/focus-ireland/config/routes.rb:6: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+  get '/contact’ => 'site#contact'
+                           ^):
+  
+config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:6: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:45:38 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/home/ec2-user/environment/focus-ireland/config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get '/about’ => 'site#about'
+                         ^
+/home/ec2-user/environment/focus-ireland/config/routes.rb:6: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+  get '/contact’ => 'site#contact'
+                           ^):
+  
+config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:6: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:47:26 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/home/ec2-user/environment/focus-ireland/config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get '/about’ => 'site#about' 
+                         ^
+/home/ec2-user/environment/focus-ireland/config/routes.rb:6: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+  get '/contact’ => 'site#contact'
+                           ^):
+  
+config/routes.rb:5: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+config/routes.rb:6: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:47:52 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 173ms (Views: 146.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:47:56 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 63ms (Views: 60.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:48:29 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 72ms (Views: 52.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/about" for 62.47.47.100 at 2018-03-28 10:48:32 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#about as HTML
+  Rendering site/about.html.erb within layouts/application
+  Rendered site/about.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 62.47.47.100 at 2018-03-28 10:51:18 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#about as HTML
+  Rendering site/about.html.erb within layouts/application
+  Rendered site/about.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 62.47.47.100 at 2018-03-28 10:53:15 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#about as HTML
+  Rendering site/about.html.erb within layouts/application
+  Rendered site/about.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 62.47.47.100 at 2018-03-28 10:54:33 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#about as HTML
+  Rendering site/about.html.erb within layouts/application
+  Rendered site/about.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 48ms (Views: 46.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 62.47.47.100 at 2018-03-28 10:54:42 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#about as HTML
+  Rendering site/about.html.erb within layouts/application
+  Rendered site/about.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 48.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 62.47.47.100 at 2018-03-28 10:54:57 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#about as HTML
+  Rendering site/about.html.erb within layouts/application
+  Rendered site/about.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:54:59 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 47ms (Views: 44.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/about" for 62.47.47.100 at 2018-03-28 10:55:00 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#about as HTML
+  Rendering site/about.html.erb within layouts/application
+  Rendered site/about.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contact" for 62.47.47.100 at 2018-03-28 10:55:01 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#contact as HTML
+  Rendering site/contact.html.erb within layouts/application
+  Rendered site/contact.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 62.47.47.100 at 2018-03-28 10:55:03 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#about as HTML
+  Rendering site/about.html.erb within layouts/application
+  Rendered site/about.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 62.47.47.100 at 2018-03-28 10:55:25 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 39ms (Views: 36.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 62.47.47.100 at 2018-03-28 10:55:31 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#about as HTML
+  Rendering site/about.html.erb within layouts/application
+  Rendered site/about.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 62.47.47.100 at 2018-03-28 10:55:32 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/about" for 62.47.47.100 at 2018-03-28 10:55:32 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#about as HTML
+  Rendering site/about.html.erb within layouts/application
+  Rendered site/about.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 62.47.47.100 at 2018-03-28 10:55:52 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#about as HTML
+  Rendering site/about.html.erb within layouts/application
+  Rendered site/about.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 62.47.47.100 at 2018-03-28 10:55:56 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (uninitialized constant AboutController):
+  
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.5) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.5) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.5) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.5) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.5) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.5) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.5) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 62.47.47.100 at 2018-03-28 10:56:27 +0000
+Cannot render console from 62.47.47.100! Allowed networks: 78.152.254.48, 127.0.0.0/127.255.255.255, ::1
+Processing by SiteController#about as HTML
+  Rendering site/about.html.erb within layouts/application
+  Rendered site/about.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 1.1ms)
+
+

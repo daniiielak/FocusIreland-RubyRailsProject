@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'site/about'
+  get 'site/contact'
+
+ 
+  get '/about' => 'site#about' 
+  get '/contact' => 'site#contact'
+
   resources :profiles
   devise_for :users
   get 'thankyou/index'
@@ -14,6 +21,6 @@ Rails.application.routes.draw do
   get '/signedinuserprofile' => 'profiles#signedinuserprofile'
   resources :orders
   resources :products
-  root 'products#index'
+  root 'site#about'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

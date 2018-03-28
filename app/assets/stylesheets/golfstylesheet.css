@@ -6,7 +6,7 @@
 } */
 
 body {
-background: url("/assets/Site/Bodenstown.jpg") no-repeat center center fixed;
+background: url("/assets/Site/street-background.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -22,10 +22,11 @@ div#container {
     min-height: 850px;
     border:2px orange solid;
     /* background-image: url("/assets/Site/bg3.gif"); */
-    max-width: 1024px;
+    max-width: 1300px;
     min-width: 750px;
     margin: auto;
 }
+
 div#first-column {
 	margin: 3px 3px 3px 3px;
     position: absolute;
