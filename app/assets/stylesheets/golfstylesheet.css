@@ -18,21 +18,20 @@ h1, h6 {
     font-weight: normal;
 }
 div#container {
+		padding-left: 178px;
     position: relative;
     min-height: 850px;
-    border:2px orange solid;
-    /* background-image: url("/assets/Site/bg3.gif"); */
-    max-width: 1300px;
-    min-width: 750px;
-    margin: auto;
+    border: none;
+    max-width: 1024px;
+    min-width: 1024px;
+    margin: none;
 }
 
 div#first-column {
 	margin: 3px 3px 3px 3px;
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
-    /* background-image: url("/assets/Site/bg3.gif"); */
     width: 279px;
     margin: 3px;
 }
@@ -40,54 +39,47 @@ div#first-column {
     left: 710px;
 }
 div#content {
-	left: 0;
-	padding: 3px;
-    margin: 3px 3px 3px 5px;
-    /*background: rgb(240, 240, 240);*/
-    background-image: url("/assets/Site/bg3.gif");
-    border: 2px solid gray;
+	 position: relative;
+	margin-top: 5px;
+    padding: 7px 15px;
+    background-color: white;
+    border: none;
     min-height: 750px;
-    width: 800px;
+    max-width: 1024px;
    
 }
 div#header,
 div#footer,
 div#menu {
-    background: rgb(20, 20, 20);
-    padding: 3px;
-    border:2px orange solid;
-    max-width: 994px;
+		border: 2px;
+    border: none;
+    max-width: 1024px;
     min-width: 744px;
     margin: auto;
-}
-
-div#header {
-	border:2px orange solid;
- 	border-top-left-radius:25px;
- 	border-top-right-radius:25px;
-		
 }
 
 div#menu {
     border-bottom: none;
     width: 1024px;
-    height: 28px;
+    height: 45px;
+    font-weight: bold;
 }
 div#header {
     border-bottom: none;
-    background-image: url("/assets/Site/BookHeader.jpg");
+    background-image: url("/assets/Site/header-image-small.png");
     width: 1024px;
-    height: 170px;
+    height: 281px;
 }
 div#footer {
+    margin-top: 5px;
+    padding: 5px;
+    color: white;
     border-top: none;
 }
 
 div.box {
 	margin: 0px 0px 30px 5px;
-	padding: 5px;
 	height: 260px;
-	border:2px orange solid;
 	background-image: url("/assets/Site/bg3.gif");
  	border-radius:9px;
  	-moz-border-radius:9px; /* Old Firefox */
@@ -96,7 +88,6 @@ div.box {
 
 div.searchbox {
 	margin: 0px 0px 30px 5px;
-	padding: 5px;
 	height: 55px;
 	border:2px orange solid;
 	background-image: url("/assets/Site/bg3.gif");
@@ -107,7 +98,6 @@ div.searchbox {
 
 div.loginbox {
 	margin: 0px 0px 30px 5px;
-	padding: 5px;
 	height: 65px;
 	border:2px orange solid;
  	border-radius:9px;
@@ -119,8 +109,8 @@ div.loginbox {
 /* ------------------------- */
  #navbar ul          
  {
-     margin: 0;         
-     padding: 5px;         
+     padding: 15px;
+     margin: 0px;         
      list-style-type: none;         
      text-align: left;  
      font-size: 17px;      
@@ -136,18 +126,17 @@ div.loginbox {
  #navbar ul li a          
  {
      text-decoration: none;         
-     padding: .2em 1em;         
+     padding: .2em 1em;       
      color: #fff;         
      background-color: #333;         
      }  
      
 #navbar ul li a:hover          
 {
-    color: navy;
-    background-color: azure;         
-   	border:0px orange solid;
- 	border-radius:9px;
- 	-moz-border-radius:9px; /* Old Firefox */
+    color: #fcd703;
+    background-color: white;         
+ 	/*border-radius:9px;
+ 	-moz-border-radius:9px;  Old Firefox */
        
 }
 
