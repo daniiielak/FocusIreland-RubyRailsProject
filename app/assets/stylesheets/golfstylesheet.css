@@ -99,7 +99,6 @@ div.searchbox {
 div.loginbox {
 	margin: 0px 0px 30px 5px;
 	height: 65px;
-	border:2px orange solid;
  	border-radius:9px;
  	background-image: url("/assets/Site/bg3.gif");
  	-moz-border-radius:9px; /* Old Firefox */
@@ -114,7 +113,7 @@ div.loginbox {
      list-style-type: none;         
      text-align: left;  
      font-size: 17px;      
-     background-color: #333;         
+     background-color: #333333;         
  }  
  
  #navbar ul li           
@@ -128,7 +127,7 @@ div.loginbox {
      text-decoration: none;         
      padding: .2em 1em;       
      color: #fff;         
-     background-color: #333;         
+     background-color: #333333;         
      }  
      
 #navbar ul li a:hover          
@@ -750,4 +749,175 @@ div.loginbox {
 #imgDisplay img {
 	border: 4px #666666 solid;
 	width: 300px;
+}
+
+/* ----------------------- Contact Us Page Styling -------------- */
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+	background-color:white;
+}
+
+#contact-us-form-main {
+	width:100%;
+	text-align: center;
+	display: block;
+}
+
+#contact-us-form-div {
+	display: inline-block;
+	text-align: center;
+	background: #fcd703;
+	padding-left:30px;
+	padding-right:30px;
+	padding-top:20px;
+	padding-bottom:40px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.contact-us-map {
+	margin-top: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+.contact-us-map iframe {
+	width: 100%;
+	height: 350px;
+}
+
+#contact-us-location {
+	display: inline-block;
+	height: 350px;
+	width: 100%;
+	border: 3px solid #ffffff;
+}
+
+.contact-us-input {
+	color:#3c3c3c;
+	font-family: 'Quicksand', sans-serif;
+  	font-weight:500;
+	font-size: 15px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 50px;
+	margin-bottom: 9px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  	border: 3px solid rgba(0,0,0,0);
+}
+
+.contact-us-input:focus {
+	background: #fff;
+	box-shadow: none;
+	border: 3px solid #333333;
+	color: #333333;
+	outline: none;
+  	padding: 13px 13px 13px 50px;
+}
+
+#contact-us-name {
+	background-image: url(../images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#contact-us-name:focus {
+	background-image: url(../images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#contact-us-email {
+	background-image: url(../images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#contact-us-email:focus {
+	background-image: url(../images/email.svg);
+	background-size: 30px 30px;
+  	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#contact-us-message {
+	background-image: url(../images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#contact-us-submit {
+	outline: none;
+	font-family: 'Quicksand', sans-serif;
+	width: 100%;
+	border: #ffffff solid 3px;
+	cursor:pointer;
+	background-color: #333333;
+	color:white;
+	font-size:20px;
+	padding-top:16px;
+	padding-bottom:16px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+  	font-weight:600;
+}
+
+#contact-us-submit:hover {
+	border: #9C27B0 solid 4px;
+	background-color: #fff;
+	color: #9C27B0;
+}
+
+#contactSuccessMessage, #contactErrorMessage { 
+	display:none;
+	transition: opacity 0.85s ease-in-out;
+	opacity: 0;
+	margin-bottom: 15px;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    border: 2px white solid;
+}
+
+#contactSuccessMessage {
+	background-color: #07920d;;
+}
+
+#contactErrorMessage { 
+    background-color: #b70000;
+}
+
+.inputError {
+	border: 3px solid #b70000 !important;
+}
+
+@media ( max-width : 767px) {
+	#contact-us-form-div {
+		width: 95%;
+	}
+}
+
+@media ( min-width : 768px) {
+	#contact-us-form-div {
+		width: 70%;
+	}
 }
