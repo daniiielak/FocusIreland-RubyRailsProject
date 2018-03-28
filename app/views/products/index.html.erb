@@ -1,9 +1,14 @@
+  <html>
+   <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+<body>
 <p id="notice"><%= notice %></p>
 
 <h1>Shoebox Appeal Products</h1>
-  <p>As with our regular offline Shoeobox Appeal Project, also online, you are able to customize your shoebox present as much as you'd like.</p>
-  <p>Just choose from the items below, divided into "men" "women" and "kids" and create your own shoebox with an individualized message for your receipient.</p>
+  <p>As with our regular offline Shoeobox Appeal Project, also online, you are able to customize your shoebox present as much as you'd like. Just choose from the items below, divided into "men" "women" and "kids" and create your own shoebox with an individualized message for your receipient.</p>
 
+<div class="yellow-surrounding-box">
 <table class='catalog'>
   <% @products.each do |product| %>
    <tr>
@@ -36,8 +41,11 @@
     </tr>
     <% end %>
 </table>          
-          
+  </div>        
   <br>
    <% if current_user.admin? %>
    <%= link_to 'New Product', new_product_path %>
-   <% end %>    
+   <% end %>
+
+   </body>
+  </html>

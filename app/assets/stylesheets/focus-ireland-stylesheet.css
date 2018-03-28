@@ -1,9 +1,6 @@
-/* body {
-    background-image: url("/assets/Site/Background.jpg");
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-} */
+/*
+Stylesheet used for the focus-ireland shoebox apparel page. 
+*/
 
 body {
 background: url("/assets/Site/street-background.jpeg") no-repeat center center fixed;
@@ -13,10 +10,14 @@ background: url("/assets/Site/street-background.jpeg") no-repeat center center f
   background-size: cover;
 }
 
-h1, h6 {
-    margin: 0;
-    font-weight: normal;
+h1, h2, h3, h4, h5, h6 {
+		font-family: Arial, sans-serif;
+		font-weight: bold;
+    margin: 0px;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
+
 div#container {
 		padding-left: 178px;
     position: relative;
@@ -41,11 +42,13 @@ div#first-column {
 div#content {
 	 position: relative;
 	margin-top: 5px;
-    padding: 7px 15px;
+    padding: 10px 35px;
     background-color: white;
     border: none;
     min-height: 750px;
     max-width: 1024px;
+   -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
    
 }
 div#header,
@@ -56,6 +59,8 @@ div#menu {
     max-width: 1024px;
     min-width: 744px;
     margin: auto;
+    -moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
 }
 
 div#menu {
@@ -83,7 +88,6 @@ div.box {
 	background-image: url("/assets/Site/bg3.gif");
  	border-radius:9px;
  	-moz-border-radius:9px; /* Old Firefox */
-
 }
 
 div.searchbox {
@@ -105,7 +109,11 @@ div.loginbox {
 
 }
 
-/* ------------------------- */
+.video-box {
+	text-align: center;
+}
+
+/* ---------- Navigation bar --------------- */
  #navbar ul          
  {
      padding: 15px;
@@ -127,16 +135,18 @@ div.loginbox {
      text-decoration: none;         
      padding: .2em 1em;       
      color: #fff;         
-     background-color: #333333;         
+     background-color: #333333; 
+        -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
      }  
      
 #navbar ul li a:hover          
 {
-    color: #fcd703;
-    background-color: white;         
- 	/*border-radius:9px;
- 	-moz-border-radius:9px;  Old Firefox */
-       
+    padding: 8px;
+    color: white;
+    background-color: #fcd703; 
+       -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 }
 
 .box img {
@@ -145,7 +155,7 @@ div.loginbox {
 }
 
 #PageHeader {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 	width: 98%;
 	height: 30px;
 	text-align:center;
@@ -230,7 +240,7 @@ div.loginbox {
 	width: 97%;
 	height: 20px;
 	text-align:center;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 16px;
 	color: Azure;
 	background-color:slategrey;
@@ -277,7 +287,7 @@ div.loginbox {
 	height: 17px;
 	background-color:darkolivegreen;
 	color: white;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 	text-align: center;
 	border:2px silver solid;
  	border-radius:9px;
@@ -291,7 +301,7 @@ div.loginbox {
 	height: 17px;
 	background-color: orangered;
 	color: white;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 	text-align: center;
 	border:2px silver solid;
  	border-radius:9px;
@@ -356,20 +366,20 @@ div.loginbox {
 .catalogPrice {
 	text-align:center;
 	margin:7px;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size:20px;
 	color:darkcyan;
 }
 
 .message {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 8px;
 	color:darkcyan;
 }
 
 .catalogName {
 	margin-left: 5px;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 12px;
 	height: 32px;
 }
@@ -387,7 +397,7 @@ div.loginbox {
 /* ------------------- Drop down BOxex for Category and Brand ---------------*/
 #sortTerms {
 	float: left;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 18px;
 }
 
@@ -620,13 +630,13 @@ div.loginbox {
 }
 
 #login label {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 16px;
 	color: navy;
 }
 
 #login span {
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
 	font-size: 10px;
 	color: green;
 }
@@ -770,14 +780,14 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	display: block;
 }
 
-#contact-us-form-div {
-	display: inline-block;
+.yellow-surrounding-box {
+	/*display: inline-block;*/
 	text-align: center;
 	background: #fcd703;
-	padding-left:30px;
-	padding-right:30px;
+	padding-left:50px;
+	padding-right:50px;
 	padding-top:20px;
-	padding-bottom:40px;
+	padding-bottom:30px;
 	-moz-border-radius: 7px;
 	-webkit-border-radius: 7px;
 }
@@ -798,11 +808,13 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	height: 350px;
 	width: 100%;
 	border: 3px solid #ffffff;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 }
 
 .contact-us-input {
 	color:#3c3c3c;
-	font-family: 'Quicksand', sans-serif;
+	font-family: Arial, sans-serif;
   	font-weight:500;
 	font-size: 15px;
 	border-radius: 0;
@@ -815,7 +827,9 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
-  	border: 3px solid rgba(0,0,0,0);
+  border: 3px solid rgba(0,0,0,0);
+  -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 }
 
 .contact-us-input:focus {
@@ -832,6 +846,8 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
+	   -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 }
 
 #contact-us-name:focus {
@@ -840,6 +856,8 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	background-position: 8px 5px;
   	background-position: 11px 8px;
 	background-repeat: no-repeat;
+	   -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 }
 
 #contact-us-email {
@@ -847,6 +865,8 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
+	   -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 }
 
 #contact-us-email:focus {
@@ -854,6 +874,8 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	background-size: 30px 30px;
   	background-position: 11px 8px;
 	background-repeat: no-repeat;
+	   -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 }
 
 #contact-us-message {
@@ -861,11 +883,13 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
+		   -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 }
 
 #contact-us-submit {
 	outline: none;
-	font-family: 'Quicksand', sans-serif;
+	font-family: Arial, sans-serif;
 	width: 100%;
 	border: #ffffff solid 3px;
 	cursor:pointer;
@@ -878,12 +902,16 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
   	font-weight:600;
+  		   -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 }
 
 #contact-us-submit:hover {
-	border: #9C27B0 solid 4px;
+	border: #333333 solid 4px;
 	background-color: #fff;
-	color: #9C27B0;
+	color: #fcd703;
+		   -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
 }
 
 #contactSuccessMessage, #contactErrorMessage { 
