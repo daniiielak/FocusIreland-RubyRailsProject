@@ -18,13 +18,14 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 6px;
 }
 
+/* padding left 295px - center the comtainer*/
 div#container {
-		padding-left: 178px;
+	padding-left: 330px;
     position: relative;
     min-height: 850px;
     border: none;
-    max-width: 1024px;
-    min-width: 1024px;
+    max-width: 1900px;
+    min-width: 500px;
     margin: none;
 }
 
@@ -129,6 +130,12 @@ div.loginbox {
      display: inline;
        
  }  
+  .activecart         
+ {
+     display: inline;
+     padding-left: 400px;
+       
+ }
  
  #navbar ul li a          
  {
@@ -294,7 +301,7 @@ div.loginbox {
  	-moz-border-radius:9px; /* Old Firefox */
 }
 
-.AddCart {
+.addCart {
 	float:left;
 	margin-left: 10px;
 	width: 80px;
@@ -504,7 +511,7 @@ div.loginbox {
 
 /* -------------------- Cart ------------------- */
 .cart {
-	width: 95%;
+	width: 25%;
 	border-collapse:collapse;
 	margin-left: 15px;
 
@@ -522,8 +529,8 @@ div.loginbox {
 	background-color: thistle;
 }
 
-.cartButton {
-	background-color: seagreen;
+.btn-grou {
+	background-color: white;
 	padding: 5px;
 	border: 2px red solid;
 	border-radius:15px;

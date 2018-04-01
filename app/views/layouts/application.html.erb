@@ -4,6 +4,7 @@
     <title>Focus Ireland</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <%= csrf_meta_tags %>
   </head>
   <body>
@@ -16,8 +17,7 @@
             <li><a href="/about">About Us</a></li>
             <li><a href="/products">Products</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/logout">Logout</a></li>
+            <li class="activecart"><%= render 'layouts/cart' %></li>
           </ul>
         </div>
       </div>
@@ -34,15 +34,6 @@
               <%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %>
             <% end %>
       </div>
-      <!--
-      <div id='first-column'>
-        <div class="loginbox">
-          <h2 class="BoxHeaders"> Login Here...</h2>
-        </div>
-         <div class="searchbox">
-           <h2 class="BoxHeaders"> Search Catalog.</h2>
-      </div>
-    </div> -->
   </div>
   <div id='footer'>
     <h6 class="footertext">&copy; Focus Ireland Online Shoe Box Appeal &trade; 2018</h6>

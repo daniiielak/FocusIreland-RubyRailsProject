@@ -17,7 +17,7 @@
           <%= link_to (image_tag product.image_url, :style =>'height:100px'), product %>
         </div>
       </td>
-  <td>
+        <td>
           <div class='title'>
             <%= link_to product.product, product%>
           </div>
@@ -27,18 +27,25 @@
           <div class='price'>
             <%= number_to_currency(product.price, :unit => '€') %>
           </div>
-          
-          
           <div class='links'>
             <% if current_user.admin? %>
               <td><%= link_to 'Edit', edit_product_path(product) %></td>
               <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          <% else %>
-            <a href='/cart'<% products.id %>Add to Cart</a><br><br>
+              <% else %>
+              <!-- ****T *****-->
+            <td><div class="pull-right">
+          <%= form_for(@order_item, remote: true) do |f| %>
+					<%= f.hidden_field :product_id, value: product.id %>
+						<h5><%= product.price %></h5>
+					<div class="form-group">
+						<%= f.text_field :quantity, value: 1, min: 1, class: 'form-control' %>
+					</div>
+					<%= f.submit "Add to cart", class: 'btn btn-primary btn-sm' %>
+				<% end %></td>
+				</div>
           <% end %>
           </div>
-      </td>
-    </tr>
+        </tr>
     <% end %>
 </table>          
   </div>        
