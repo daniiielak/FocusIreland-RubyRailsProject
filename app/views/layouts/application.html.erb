@@ -18,13 +18,13 @@
             <li><a href="/products">Products</a></li>
             <li><a href="/contact">Contact</a></li>
              <% if user_signed_in? %>
-              <li>Signed <%= current_user.email %> (<%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>)</li>
+              <li style="color:white; font-size:12px">Logged in: <%= current_user.email %> </li>
+              <li><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></li>
             <% else %>
-              <li><%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %></li>
+              <li><%= link_to 'Register', new_user_registration_path %> <%= link_to 'Sign in', new_user_session_path %></li>
             <% end %>
             <li class="activecart"><%= render 'layouts/cart' %></li>
             
-      
           </ul>
         </div>
       </div>
