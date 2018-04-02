@@ -18,9 +18,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 6px;
 }
 
-/* padding left 295px - center the comtainer*/
-div#container {
-	padding-left: 330px;
+#container {
     position: relative;
     min-height: 850px;
     border: none;
@@ -29,7 +27,7 @@ div#container {
     margin: none;
 }
 
-div#first-column {
+#first-column {
 	margin: 3px 3px 3px 3px;
     position: relative;
     top: 0;
@@ -40,22 +38,18 @@ div#first-column {
 div#first-column {
     left: 710px;
 }
-div#content {
+#content {
 	 position: relative;
-	margin-top: 5px;
+		margin-top: 5px;
     padding: 10px 35px;
     background-color: white;
     border: none;
-    min-height: 750px;
-    max-width: 1024px;
-   -moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
-   
 }
+
 div#header,
 div#footer,
+div#container,
 div#menu {
-		border: 2px;
     border: none;
     max-width: 1024px;
     min-width: 744px;
@@ -113,6 +107,47 @@ div.loginbox {
 .video-box {
 	text-align: center;
 }
+/* ---------- Login bar --------------- */
+#navbar-login ul          
+ {
+     padding: 12px;
+     margin: 0px;         
+     list-style-type: none;         
+     text-align: right;  
+     font-size: 12px;      
+     background-color: #333333;   
+ }  
+ 
+ #navbar-login ul li           
+ {
+     display: inline;
+       
+ }  
+  .activecart         
+ {
+     display: inline;
+       
+ }
+ 
+ #navbar-login ul li a          
+ {
+     text-decoration: none;         
+     padding: .2em 1em;       
+     color: #fff;         
+     background-color: #333333; 
+        -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+     }  
+     
+#navbar-login ul li a:hover          
+{
+    padding: 15px;
+    color: white;
+    background-color: #fcd703; 
+       -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
 
 /* ---------- Navigation bar --------------- */
  #navbar ul          
