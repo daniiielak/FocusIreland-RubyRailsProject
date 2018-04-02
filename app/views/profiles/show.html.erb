@@ -17,12 +17,16 @@
   <%= @profile.address %>
 </p>
 
-<p>
+<% if current_user && current_user.admin? %>
+ <p>
   <strong>User:</strong>
   <%= @profile.user %>
-</p>
+ </p>
+<% end %>
 
  <%= link_to 'Edit', edit_profile_path(@profile) %> 
 <% if current_user && current_user.admin? %>
  <%= link_to 'Back', profiles_path %>
 <% end %>
+
+</div>

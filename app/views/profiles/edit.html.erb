@@ -5,5 +5,6 @@
 <% if current_user && current_user.admin? %>
  <%= link_to 'Show', @profile %> |
  <%= link_to 'Back', profiles_path %>
- <%= render 'form', profile: @profile %>
 <% end %>
+
+<%= render 'form', profile: @profile %>
