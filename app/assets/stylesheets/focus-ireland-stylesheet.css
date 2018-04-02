@@ -482,7 +482,9 @@ div.loginbox {
 	border-radius:9px;
  	-moz-border-radius:9px; /* Old Firefox */
 }
-
+.fielduser{
+	display:none;
+}
 #map {
 	float:left;
 	margin:10px;
@@ -767,6 +769,8 @@ div.loginbox {
 	border: 4px #666666 solid;
 	width: 300px;
 }
+
+
 
 /* ----------------------- Contact Us Page Styling -------------- */
 

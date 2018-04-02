@@ -17,23 +17,23 @@
             <li><a href="/about">About Us</a></li>
             <li><a href="/products">Products</a></li>
             <li><a href="/contact">Contact</a></li>
+             <% if user_signed_in? %>
+              <li>Signed <%= current_user.email %> (<%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>)</li>
+            <% else %>
+              <li><%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %></li>
+            <% end %>
             <li class="activecart"><%= render 'layouts/cart' %></li>
+            
+      
           </ul>
         </div>
       </div>
       <div id='container'>
         <div id='content'>
-          <p class="notice"><%= flash[:notice] %></p>
-          <p class="notice"><%= flash[:notice] %></p>
           <p class="alert"><%= flash[:alert] %></p>
             <%= yield %>
             
-            <% if user_signed_in? %>
-              <div> Signed <%= current_user.email %> (<%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>)
-            <% else %>
-              <%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %>
-            <% end %>
-      </div>
+           
   </div>
   <div id='footer'>
     <h6 class="footertext">&copy; Focus Ireland Online Shoe Box Appeal &trade; 2018</h6>
