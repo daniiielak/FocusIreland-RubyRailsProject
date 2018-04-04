@@ -818,6 +818,7 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 }
 
 /*-----------Registration------------*/
+
 #registration-form-main {
 	width:100%;
 	text-align: center;
@@ -836,6 +837,15 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	padding-bottom:30px;
 	-moz-border-radius: 7px;
 	-webkit-border-radius: 7px;
+}
+.registrationImage{
+	width: auto;
+	height: auto;
+	margin: 10px;
+	margin-bottom: 20px;
+	border: 2px black solid;
+	float:right;
+	
 }
 
 .registration-input {
