@@ -818,6 +818,15 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 }
 
 /*-----------Registration------------*/
+#LoginHeader{
+
+	border-width: 5px;
+	padding: 10px;
+	width: 60%;
+	margin: 40px 20px 20px 170px;
+	
+	
+}
 
 #registration-form-main {
 	width:100%;
@@ -847,7 +856,26 @@ input:hover, textarea:hover, input:focus, textarea:focus {
 	float:right;
 	
 }
-
+.edit-input{
+	color:#3c3c3c;
+	font-family: Arial, sans-serif;
+  	font-weight:500;
+	font-size: 15px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 10px 13px 13px 20px;
+	margin-bottom: 9px;
+	margin-left:5px;
+	width:30%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+  -moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
 .registration-input {
 	color:#3c3c3c;
 	font-family: Arial, sans-serif;

@@ -11,19 +11,19 @@
     </div>
   <% end %>
 <div class="yellow-surrounding-box">
-  <div class="field">
+  <div class="field", style = "font-size: 20px; margin-top: 30px;">
     <%= form.label :firstname %>
-    <%= form.text_field :firstname, id: :profile_firstname %>
+    <%= form.text_field :firstname, id: :profile_firstname, class: "edit-input" %>
   </div>
 
-  <div class="field">
+  <div class="field", style = "font-size: 20px;">
     <%= form.label :lastname %>
-    <%= form.text_field :lastname, id: :profile_lastname %>
+    <%= form.text_field :lastname, id: :profile_lastname, class: "edit-input" %>
   </div>
 
-  <div class="field">
+  <div class="field", style ="margin-left: 10px; font-size: 20px">
     <%= form.label :address %>
-    <%= form.text_field :address, id: :profile_address %>
+    <%= form.text_field :address, id: :profile_address, class: "edit-input" %>
   </div>
   
 
@@ -32,8 +32,9 @@
     <%= form.text_field :user_id, id: :profile_user_id %>
   </div>
 
-
-  <div class="actions">
+  <%= link_to "Change your password", edit_user_registration_path %>
+  
+  <div class="actions", style = "font-size:20px; margin-top: 30px;">
     <%= form.submit %>
   </div>
 </div>
