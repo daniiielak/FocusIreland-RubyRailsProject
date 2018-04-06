@@ -7,8 +7,15 @@
 
 <h1>Shoebox Appeal Products</h1>
   <p>As with our regular offline Shoeobox Appeal Project, also online, you are able to customize your shoebox present as much as you'd like. Just choose from the items below, divided into "men" "women" and "kids" and create your own shoebox with an individualized message for your receipient.</p>
+  
+  <%= form_tag(products_path, :method => "get", id: "search-form") do %>
+  <%= text_field_tag :search, params[:search], placeholder: "Search Products" %>
+  <%= submit_tag "Search" %>
+  <% end %>
+  <br>
 
 <div class="yellow-surrounding-box">
+
 <table class='catalog'>
   <% @products.each do |product| %>
    <tr>
