@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   resource :thankyous, only: [:show]
   delete '/carts' => 'carts#destroy'
   get '/carts' => 'carts#index'
+  get '/thankyous/index' => 'thankyous#index'
   
   #resources :payment_notification, only: [:create]
   get '/profile/show'=> 'profile#show'

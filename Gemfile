@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'taps'
-gem 'pg', '~> 0.20'
+#gem 'pg', '~> 0.20'
 ruby '2.4.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
@@ -40,7 +40,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'pg', '~> 0.20'
+  #gem 'pg', '~> 0.20'
 end
 
 group :development do
@@ -57,7 +57,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #gem 'rails_12factor', group: :production
 
-group :production do
-  gem 'pg', '~> 0.20'
-  gem 'rails_12factor'
-end 
+#group :production do
+  #gem 'pg', '~> 0.20'
+  #gem 'rails_12factor'
+#end 
