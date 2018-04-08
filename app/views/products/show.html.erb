@@ -1,33 +1,32 @@
+<h1>Product Details</h1>
+<p>Find the details for your chosen product below: </p>
+
+<div class="yellow-surrounding-box">
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Product:</strong>
-  <%= @product.product %>
-</p>
+<p> <strong>Product:</strong> </p>
+  <p><%= @product.product %></p>
+<br>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+<p><strong>Description:</strong></p>
+ <p><%= @product.description %></p>
+<br>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+<p><strong>Image url:</strong></p>
+ <p><%= @product.image_url %></p>
+<br>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+<p><strong>Price:</strong></p>
+ <p>€ <%= @product.price %></p>
+ <br>
 
-<p>
-  <strong>Category:</strong>
-  <%= @product.category %>
-</p>
+<p><strong>Category:</strong></p>
+  <p><%= @product.category %></p>
 
 <div class='links'>
             <% if current_user && current_user.admin? %>
               <td><%= link_to 'Edit', edit_product_path(product) %></td>
               <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             <% end %>
+</div>
 </div>
