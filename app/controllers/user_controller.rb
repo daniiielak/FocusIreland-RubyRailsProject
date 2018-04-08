@@ -1,5 +1,6 @@
 class UserController < ApplicationController
     def login
+        
     end
     def admin_login
         session[:login] = 1

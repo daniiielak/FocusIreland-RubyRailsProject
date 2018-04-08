@@ -4,5 +4,5 @@ class Product < ApplicationRecord
     def self.search(search)
       where("product LIKE ?", "%#{search}%")
     end
-    
+  
 end 

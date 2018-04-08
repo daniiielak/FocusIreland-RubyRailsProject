@@ -1,15 +1,18 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, only: [:show, :edit, :update, :destroy]
 
+
   # GET /profiles
   # GET /profiles.json
   def index
     @profiles = Profile.all
+    session[:order] = Order.find(session[:order_id])
   end
 
   # GET /profiles/1
   # GET /profiles/1.json
   def show
+    
   end
 
   # GET /profiles/new
@@ -71,6 +74,8 @@ class ProfilesController < ApplicationController
     profile = Profile.find_by_user_id(current_user.id)
     if profile.nil? 
       redirect_to"/profiles/new"
+      
+
   else
     @profile = Profile.find_by_user_id(current_user.id)
     redirect_to"/profiles/#{@profile.id}"
@@ -88,6 +93,5 @@ class ProfilesController < ApplicationController
     def profile_params
       params.require(:profile).permit(:firstname, :lastname, :address, :user_id)
     end
-    
     
 end

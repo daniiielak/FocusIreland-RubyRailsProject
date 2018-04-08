@@ -39,7 +39,8 @@
               <td><%= link_to 'Edit', edit_product_path(product) %></td>
               <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
               <% else %>
-              <!-- ****T *****-->
+
+
             <td><div class="pull-right">
           <%= form_for(@order_item, remote: true) do |f| %>
 					<%= f.hidden_field :product_id, value: product.id %>
@@ -47,8 +48,9 @@
 					<div class="form-group">
 						<%= f.text_field :quantity, value: 1, min: 1, class: 'form-control' %>
 					</div>
-					<%= f.submit "Add to cart", class: 'btn btn-primary btn-sm' %>
-				<% end %></td>
+					
+					<%= f.submit "Add to cart", data: {confirm: "Item was added to the cart"} %>
+				<% end %></br></td>
 				</div>
           <% end %>
           </div>
