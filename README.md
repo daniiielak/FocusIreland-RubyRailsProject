@@ -8,7 +8,7 @@ The application was developed in ruby 2.4.1 and rails 5.1.5 as a group project b
 Focus Ireland is an Irish non profit organization focusing on preventing people from becoming, remaining or returning to homelessness. Each year during Christmas time, the "Shoebox Appeal" project of Focus Ireland aims to raise awareness for of the issues of homelessness and allows people to fill a box (e.g. shoebox, carton box) with highly needed goods for homeless kids, men and women and pack it as a Christmas present.
 While the website of the organization allows users to directly make a donation online, it doesn’t offer any possibilities to donate goods that are highly needed for people suffering from homelessness. 
 This web application aims to bring the shoebox appeal process online, so users can directly choose products from a catalogue and put them into an online "cart box" in order to donate them.
-Heroku deployment link: https://focus-ireland-shoebox-app.herokuapp.com/products
+Heroku deployment link: https://focus-ireland-shoebox-app.herokuapp.com/
 
 ## Functionalities:
 Product catalogue
