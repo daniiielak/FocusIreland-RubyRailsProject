@@ -1,4 +1,5 @@
 class CartsController < ApplicationController
+	
 	def show
 			@order_items = current_order.order_items
 	end
@@ -6,6 +7,7 @@ class CartsController < ApplicationController
 	
 	def index
 		session.delete(:order_id)
+
 	end
 
 end

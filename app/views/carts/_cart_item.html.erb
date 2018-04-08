@@ -1,5 +1,6 @@
 <div>
 		<div>
+
 		    <h5>Order Total: <%= "(#{current_order.order_items.size} item(s))"%></h5>
 		    <h4>€<%= "#{current_order.subtotal}"%></h4>
 		    <%= button_to 'Go to checkout', payments_path, :method => :get %>
@@ -7,7 +8,15 @@
 		<h4><strong><u>Order Summary</u></strong></h4>
 		<% if @order_items.size>0 %>
 			<% @order_items.each do |item| %>
-		
+
+		    <h4>Order Total: €<%= "#{current_order.subtotal}"%></h4>
+		    <%= button_to 'Go to checkout', payments_path, :method => :get %>
+		    <!--%= link_to 'Empty Cart', carts_path(@carts), method: :delete, data: { confirm: 'Are you sure?' } %-->
+		</div>
+		<h4><strong><u>Order Summary</u></strong></h4>
+		<% if @order_items.size>0 %>
+			<% @order_items.each do |item| %>
+				<!--% if product.id != product.id %-->
 				<div class="table">
 					<div class="row">
 					<div class="col-sm-8">
