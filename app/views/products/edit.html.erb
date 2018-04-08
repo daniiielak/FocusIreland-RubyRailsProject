@@ -1,6 +1,15 @@
+<% if current_user.admin? %>
 <h1>Editing Product</h1>
+
+<p> Edit the product below: </p>
+<div class="yellow-surrounding-box">
 
 <%= render 'form', product: @product %>
 
 <%= link_to 'Show', @product %> |
 <%= link_to 'Back', products_path %>
+</div>
+<% end %>
+
+<h1>Admin Access Only</h1>
+<%= link_to 'Continue Shopping', :controller => :products %> 

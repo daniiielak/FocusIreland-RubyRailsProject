@@ -4,6 +4,8 @@
 		    <%= button_to 'Go to checkout', payments_path, :method => :get %>
 		</div>
 		<h4><strong><u>Order Summary</u></strong></h4>
+		
+		<div class="yellow-surrounding-box">
 		<% if @order_items.size>0 %>
 			<% @order_items.each do |item| %>
 
@@ -32,6 +34,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</div>
 	<% end %>
