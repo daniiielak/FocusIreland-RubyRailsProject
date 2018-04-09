@@ -4,29 +4,32 @@
 <div class="yellow-surrounding-box">
 <p id="notice"><%= notice %></p>
 
-<p> <strong>Product:</strong> </p>
-  <p><%= @product.product %></p>
+<p> <strong>Product:</strong> <%= @product.product %></p>
 <br>
 
-<p><strong>Description:</strong></p>
- <p><%= @product.description %></p>
-<br>
-
-<p><strong>Image url:</strong></p>
- <p><%= @product.image_url %></p>
-<br>
-
-<p><strong>Price:</strong></p>
- <p>€ <%= @product.price %></p>
+<p><strong>Price:</strong> € <%= @product.price %></p>
  <br>
 
-<p><strong>Category:</strong></p>
-  <p><%= @product.category %></p>
+<p><strong>Description:</strong></p>
+<p><%= @product.description %></p>
+<br>
 
-<div class='links'>
-            <% if current_user && current_user.admin? %>
-              <td><%= link_to 'Edit', edit_product_path(product) %></td>
-              <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<p><strong>Product Image:</strong></p>
+ <%= link_to (image_tag @product.image_url, :style =>'height:200px'), @product %>
+<br>
+
+<!-- <p><strong>Category:</strong></p> -->
+ <!-- <p><%= @product.category %></p>-->
+
+<% if user_signed_in? %>
+  <br>
+          <p><strong>Add this product to your cart:</strong></p>
+          <%= form_for(@order_item, remote: true) do |f| %>
+					<%= f.hidden_field :product_id, value: @product.id %>
+						<h5>€ <%= @product.price %></h5>
+					<div class="form-group">
+						<%= f.text_field :quantity, value: 1, min: 1, :maxlength=>"7" %> 
+					</div>
+            <%= f.submit "Add to cart", data: {confirm: "Item was added to the cart"} %>
             <% end %>
-</div>
-</div>
+            	<% end %>
