@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   resource :payments, only: [:show]
   resource :thankyous, only: [:show]
   delete '/carts' => 'carts#destroy'
-  get '/carts' => 'carts#index'
+  get '/carts/index' => 'carts#index'
   get '/thankyous/index' => 'thankyous#index'
   
   #resources :payment_notification, only: [:create]

@@ -2,7 +2,7 @@
 		<div>
 		    <h5>Order Total: <%="#{current_order.subtotal}"%></h4>
 		    <%= button_to 'Go to checkout', payments_path, :method => :get %>
-		    <%= link_to 'Empty Cart', thankyous_index_url(@thankyous), method: :get, data: { confirm: 'Are you sure?' } %>
+		    <%= link_to 'Empty Cart', carts_index_url(@carts), method: :get, data: { confirm: 'Are you sure?' } %>
 		</div>
 		<h4><strong><u>Order Summary</u></strong></h4>
 		
